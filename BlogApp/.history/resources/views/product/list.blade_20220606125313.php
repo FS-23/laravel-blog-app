@@ -1,0 +1,2 @@
+Product list
+{{ $username  }}   {{ $info }}

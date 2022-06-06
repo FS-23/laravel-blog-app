@@ -1,0 +1,14 @@
+/BlogApp/node_modules
+/BlogApp/public/hot
+/BlogApp/public/storage
+/BlogApp/storage/*.key
+/BlogApp/vendor
+/BlogApp/.env
+/BlogApp/.env.backup
+/BlogApp/.phpunit.result.cache
+/BlogApp/Homestead.json
+/BlogApp/Homestead.yaml
+/BlogApp/npm-debug.log
+/BlogApp/yarn-error.log
+/BlogApp/.idea
+/BlogApp/.vscode
