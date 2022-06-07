@@ -21,13 +21,13 @@ Route::get('/blog' , function(){
 
 Route::get('/blog/list' , [BlogController::class , 'index'] );
 
-Route::get('/blog/edit/{id}' , [BlogController::class  , 'create']);
+Route::get('/blog/create' , [BlogController::class  , 'create']);
 // [BlogController::class , 'show']
-Route::get('/blog/detail/{id}' ,[BlogController::class , 'show']);
+Route::get('/blog/detail/{id}/{comment}' ,function($id, $comment){
+  return "Comment of the Blog ".$id. " :".$comment;
+});
 
-Route::get('/blog/delete/{id}' ,[BlogController::class , 'delete']);
-
-Route::post('/blog/store/{id}' , [BlogController::class , 'store']);
+Route::post('/blog/store' , [BlogController::class , 'store']);
 
 Route::get('/product' , [ProductController::class , 'index']);
 

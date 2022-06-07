@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label class="form-label" for="">Categorie</label>
-           <select class="form-select" name="categorie" id="" value="{{ $categorie }}">
+           <select class="form-select" name="categorie" id="" value="css">
                <option value="">Veuillez choisir</option>
                <option value="html">Html</option>
                <option value="css">Css</option>

@@ -2,7 +2,7 @@
 
 @section('content')
    <div class="w-50 m-auto mt-5 shadow-lg p-3">
-    <form action="/blog/store/{{ $id }}" method="post">
+    <form action="/blog/store" method="post">
         @csrf
         <h3>New blog</h3>
         <div class="form-group">

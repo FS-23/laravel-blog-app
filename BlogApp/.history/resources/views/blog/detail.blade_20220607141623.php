@@ -9,9 +9,7 @@
                </div>
                
                <div>
-                   <a class="btn btn-outline-secondary " href="/blog/list">List</a>
-                   <a class="btn btn-outline-secondary " href="/blog/edit/{{ $blog->id }}">Modifier</a>
-                   <a class="btn btn-outline-danger" href="/blog/delete/{{ $blog->id }}">Supprimer</a>
+                   <a class="btn btn-outline-secondary float-end" href="/blog/list">List</a>
                </div>
            </div>
            <div class="mt-3">

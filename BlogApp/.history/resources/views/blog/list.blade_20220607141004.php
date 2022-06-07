@@ -14,7 +14,7 @@
     </div> --}}
     <div class="mt-5 container">
             <div class="d-block text-end">
-                <a href="/blog/edit/0" class="btn btn-outline-primary mt-5">Ajouter un blog</a>
+                <a href="/blog/create" class="btn btn-outline-primary mt-5">Ajouter un blog</a>
             </div>
             <div class="row mx-0">
                 @foreach($blogs as $blog)

@@ -27,7 +27,7 @@ Route::get('/blog/detail/{id}' ,[BlogController::class , 'show']);
 
 Route::get('/blog/delete/{id}' ,[BlogController::class , 'delete']);
 
-Route::post('/blog/store/{id}' , [BlogController::class , 'store']);
+Route::post('/blog/store' , [BlogController::class , 'store']);
 
 Route::get('/product' , [ProductController::class , 'index']);
 

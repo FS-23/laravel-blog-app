@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 
 Route::get('/', function () {
-    return redirect('/blog/list');
+    return view('welcome');
 });
  
 Route::get('/home', function(){
@@ -21,13 +21,11 @@ Route::get('/blog' , function(){
 
 Route::get('/blog/list' , [BlogController::class , 'index'] );
 
-Route::get('/blog/edit/{id}' , [BlogController::class  , 'create']);
-// [BlogController::class , 'show']
-Route::get('/blog/detail/{id}' ,[BlogController::class , 'show']);
+Route::get('/blog/create' , [BlogController::class  , 'create']);
 
-Route::get('/blog/delete/{id}' ,[BlogController::class , 'delete']);
+Route::get('/blog/detail' , [BlogController::class , 'show']);
 
-Route::post('/blog/store/{id}' , [BlogController::class , 'store']);
+Route::post('/blog/store' , [BlogController::class , 'store']);
 
 Route::get('/product' , [ProductController::class , 'index']);
 

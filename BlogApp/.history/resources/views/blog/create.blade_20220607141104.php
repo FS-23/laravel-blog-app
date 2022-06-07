@@ -2,23 +2,20 @@
 
 @section('content')
    <div class="w-50 m-auto mt-5 shadow-lg p-3">
-    <form action="/blog/store/{{ $id }}" method="post">
+    <form action="/blog/store" method="post">
         @csrf
         <h3>New blog</h3>
         <div class="form-group">
             <label class="form-label"  for="">Title</label>
-            <input  class="form-control" value="{{ $title }}" name="title" placeholder="Title" type="text">
+            <input  class="form-control" name="title" placeholder="Title" type="text">
         </div>
         <div class="form-group">
             <label class="form-label" for="">Content</label>
-            <textarea class="form-control" name = "content" rows="10" placeholder="Content" type="text">
-                {{ $content }}
-            </textarea>
+            <textarea class="form-control" name = "content" placeholder="Content" type="text"></textarea>
         </div>
         <div class="form-group">
             <label class="form-label" for="">Categorie</label>
-           <select class="form-select" name="categorie" id="" value="{{ $categorie }}">
-               <option value="">Veuillez choisir</option>
+           <select class="form-select" name="categorie" id="">
                <option value="html">Html</option>
                <option value="css">Css</option>
                <option value="js">Js</option>
